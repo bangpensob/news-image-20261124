@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 """Entry program for Make.fun bounty news-image-20261124.
 Copies the bundled infographic to /output/entry.png, deterministically.
-No network, no randomness, no external files beyond entry.png in this repo.
+No network, no randomness, no external files beyond the bundled PNG in this repo.
+Bundled file is named "entry (1).png" in this repo; the program output is /output/entry.png.
 """
 import os
 import shutil
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SRC = os.path.join(HERE, "entry.png")
+SRC = os.path.join(HERE, "entry (1).png")
 DST = "/output/entry.png"
 
 def main():
